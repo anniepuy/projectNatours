@@ -1,0 +1,35 @@
+/* COLORS USED:
+
+Light Green: #7ed56f
+Medium Green: #55c57a
+Dark Green: #28b485
+*/
+
+/*Below is the universal selector to select all elements on the page*/
+* {
+    margin: 0;
+    padding: 0;
+    /*start clean and remove browswer padding*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lado", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    /*provides two background images, separated by a comma. Colors on top of image */
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.803),rgba(40, 180, 133, 0.797)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    /*below code cuts out the polygon on the bottom right corner. So cool!*/
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    /* visual tool that gives you the degrees/percents for shapes
+    bennetfeeely.com/clippy*/
+}
