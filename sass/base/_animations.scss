@@ -1,0 +1,49 @@
+@keyframes moveInLeft {
+    0% {
+        /*start*/
+        opacity: 0;
+        transform: translateX(-100px);
+        /*translate on the x axis from L to R. POS to Neg Number*/
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        /*finish of animations*/
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*You can use the animations for hovers as well.*/
+@keyframes moveInRight {
+    0% {
+        /*start*/
+        opacity: 0;
+        transform: translateX(100);
+        /*translate on the x axis from L to R. POS to Neg Number*/
+    }
+    80% {
+        transform: translateX(-10px);
+
+    }
+    100% {
+        /*finish of animations*/
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInButton {
+    0% {
+        /*start*/
+        opacity: 0;
+        transform: translateY(30px);
+        /*translate on the Y axis from top to bottom. POS to Neg Number*/
+    }
+    100% {
+        /*finish of animations*/
+        opacity: 1;
+        transform: translate(0);
+    }
+}
